@@ -19,12 +19,9 @@ main{
 .buttons{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 3vw;
-    justify-content: center;
-    align-items: center;
-    max-width: 400px;
-    width: 90vw;
-    margin: auto;
+    gap: 12px;
+    width: min(90vw, 400px);
+    margin: 40px auto;
 
     
 }
@@ -34,7 +31,7 @@ main{
     aspect-ratio: 1/1;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
     width : 100%;
-    font-size: 8vw;
+    font-size: clamp(24px, 8vw, 40px);
     color: crimson;
     background-color:wheat;
 }
