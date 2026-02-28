@@ -79,7 +79,8 @@ main{
         font-size: 22px;
     }
     .buttons{
-        width: 95vh;
+        width: 40vmin;
+        height: 40vmin;
         gap: 8px;
     }
     .box{
