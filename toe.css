@@ -74,13 +74,13 @@ main{
 .cont{
     display: none;
 }
-@media(max-width: 200px){
+@media(max-width: 500px){
     h1{
         font-size: 22px;
     }
     .buttons{
-        width: 30vh;
-        height: 30vh;
+        width: 60vh;
+        height: 60vh;
         gap: 2px;
     }
     .box{
