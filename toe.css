@@ -5,9 +5,6 @@
     font-weight: 900;
 }
 body{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: cadetblue;
     text-align: center;
 }   
@@ -22,21 +19,22 @@ main{
 .buttons{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 12px;
+    gap: 10px;
     justify-content: center;
     align-items: center;
-    width: 92vw;
-    margin: 30px auto;
+    height: 70vh;
+    width: 70vh;
+    margin: auto;
 
     
 }
 .box{
-    border-radius: 12px;
+    border-radius: 9px;
     border:none;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-    aspect-ratio: 1 / 1;
-    width : 100%;
-    font-size: 7vw;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    height: 20vmin;
+    width : 20vmin;
+    font-size: 40px;
     color: crimson;
     background-color:wheat;
 }
@@ -76,15 +74,16 @@ main{
 .cont{
     display: none;
 }
-@media(max-width: 390px){
+@media(min-width:200px) and (max-width: 490px){
     h1{
         font-size: 24px;
     }
     .buttons{
-        width: 50vh;
-        gap: 10px;
+        gap: 8px;
     }
     .box{
+        width: 25vw;
+        height:25vw;
         font-size: 8vw;
     }
     .reset, .new{
