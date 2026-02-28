@@ -9,7 +9,7 @@ body{
     text-align: center;
 }   
 main{
-    display: flex;
+    display: grid;
     justify-content: center;
     align-items: center;
     margin-top: 40px;
@@ -17,8 +17,8 @@ main{
 }
 
 .buttons{
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 10px;
     justify-content: center;
     align-items: center;
@@ -74,14 +74,14 @@ main{
 .cont{
     display: none;
 }
-@media(max-width: 500px){
+@media(max-width: 200px){
     h1{
         font-size: 22px;
     }
     .buttons{
-        width: 40vmin;
-        height: 40vmin;
-        gap: 8px;
+        width: 30vh;
+        height: 30vh;
+        gap: 2px;
     }
     .box{
         font-size: 8vw;
