@@ -19,11 +19,11 @@ main{
 .buttons{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    gap: 10px;
+    gap: 3vw;
     justify-content: center;
     align-items: center;
-    height: 70vh;
-    width: 70vh;
+    max-width: 400px;
+    width: 90vw;
     margin: auto;
 
     
@@ -31,10 +31,10 @@ main{
 .box{
     border-radius: 9px;
     border:none;
+    aspect-ratio: 1/1;
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
-    height: 20vmin;
-    width : 20vmin;
-    font-size: 40px;
+    width : 100%;
+    font-size: 8vw;
     color: crimson;
     background-color:wheat;
 }
@@ -79,12 +79,11 @@ main{
         font-size: 24px;
     }
     .buttons{
-        gap: 8px;
+        gap: 4vw;
+        width: 95vw;
     }
     .box{
-        width: 25vw;
-        height:25vw;
-        font-size: 8vw;
+        font-size: 10vw;
     }
     .reset, .new{
         font-size: 16px;
