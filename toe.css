@@ -76,7 +76,7 @@ main{
 .cont{
     display: none;
 }
-@media(max-width: 600px){
+@media(max-width: 390px){
     h1{
         font-size: 24px;
     }
